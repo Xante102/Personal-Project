@@ -1,0 +1,7 @@
+ul li a:visited, a:link {
+    color: #607D88;
+}
+
+ul li a.active {
+    border-bottom: 2px solid #facc15;
+}

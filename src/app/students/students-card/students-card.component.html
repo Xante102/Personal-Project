@@ -1,0 +1,39 @@
+<div
+  class="container w-11/12 mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 my-12 gap-8"
+>
+  <div
+    class="bg-white shadow-md flex flex-col items-center p-8 rounded"
+    *ngFor="let student of students"
+  >
+    <div class="h-24 w-24 p-2 bg-gray-100 rounded-full mb-1">
+      <img src="{{ student.img }}" alt="" class="h-full w-full object-cover overflow-hidden rounded-full">
+    </div>
+    <p class="mb-1 text-gray-800 text-base font-normal">
+      {{ student.name }}
+    </p>
+    <p class="mb-6 text-gray-600 text-xs">{{ student.field }}</p>
+    <div class="flex w-full justify-between mb-8">
+      <div class="flex flex-col items-center w-4/12">
+        <p class="text-gray-600 text-2xl">{{ student.reviews }}</p>
+        <p class="text-gray-800 text-sm">Reviews</p>
+      </div>
+
+      <div
+        class="flex flex-col items-center w-4/12 border-r border-l border-gray-200"
+      >
+        <p class="text-gray-600 text-2xl">{{ student.courses }}</p>
+        <p class="text-gray-800 text-sm">Courses</p>
+      </div>
+      <div class="flex flex-col items-center w-4/12">
+        <p class="text-gray-600 text-2xl">{{ student.approved }}</p>
+        <p class="text-gray-800 text-sm">Approved</p>
+      </div>
+    </div>
+    <button
+      class="bg-gray-100 transition duration-150 ease-in-out hover:bg-gray-300 rounded text-yellow-400 px-6 py-2 text-xs focus:outline-none"
+    >
+      View Profile
+    </button>
+  </div>
+ 
+</div>
