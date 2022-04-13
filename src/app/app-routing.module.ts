@@ -11,7 +11,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './authentication/login/login.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'home', component: HomePageComponent },
