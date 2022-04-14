@@ -18,40 +18,40 @@ const routes: Routes = [
   {
     path: 'dashboard',
     component: DashboardComponent,
-    loadChildren: () =>
-      import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
-    canActivate: [AuthGuard],
+//     loadChildren: () =>
+//       import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
+//     canActivate: [AuthGuard],
   },
   {
     path: 'courses',
     component: CoursesComponent,
-    loadChildren: () =>
-      import('./courses/courses.module').then((m) => m.CoursesModule),
-    canActivate: [AuthGuard],
+//     loadChildren: () =>
+//       import('./courses/courses.module').then((m) => m.CoursesModule),
+//     canActivate: [AuthGuard],
   },
   {
     path: 'students',
     component: StudentsComponent,
-    loadChildren: () =>
-      import('./students/students.module').then((m) => m.StudentsModule),
-    canActivate: [AuthGuard],
+//     loadChildren: () =>
+//       import('./students/students.module').then((m) => m.StudentsModule),
+//     canActivate: [AuthGuard],
   },
   {
     path: 'instructors',
     component: InstructorsComponent,
-    loadChildren: () =>
-      import('./instructors/instructors.module').then(
-        (m) => m.InstructorsModule
-      ),
-    canActivate: [AuthGuard],
+//     loadChildren: () =>
+//       import('./instructors/instructors.module').then(
+//         (m) => m.InstructorsModule
+//       ),
+//     canActivate: [AuthGuard],
   },
 
   {
     path: 'webinars',
     component: WebinarsComponent,
-    loadChildren: () =>
-      import('./webinars/webinars.module').then((m) => m.WebinarsModule),
-    canActivate: [AuthGuard],
+//    
+    
+    
   },
 ];
 
